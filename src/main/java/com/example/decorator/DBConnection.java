@@ -14,7 +14,7 @@ public class DBConnection {
         this.connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root", "root");
 
     }
-
+    
     public String getDocument(String dcsPath) throws SQLException {
         PreparedStatement statement = connection.prepareStatement("SELECT * FROM documents WHERE path = ?");
         statement.setString(1, dcsPath);
