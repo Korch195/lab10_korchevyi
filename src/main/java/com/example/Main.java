@@ -9,6 +9,5 @@ public class Main {
         MockedDocument mockedDocument = new MockedDocument();
         TimedDocument timedDocument = new TimedDocument(mockedDocument);
         System.out.println(timedDocument.parse());
-
     }
 }
